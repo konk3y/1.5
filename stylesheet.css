@@ -1,0 +1,116 @@
+@font-face {
+    font-family: ttlight;
+    src: url(./fonts/TTLakes-Light.ttf);
+}
+@font-face {
+    font-family: ttmedium;
+    src: url(./fonts/TTLakes-Medium.ttf);
+}
+body{
+    margin: 0;
+    background-color: #F8F8F8;
+}
+.header{
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.header{
+    display: flex;
+    align-items: start;
+    padding-left: 16px;
+}
+
+.header__text{
+    font-family: ttlight;
+    font-size: 16px;
+    color: #7E7E82;
+    text-transform: uppercase;
+}
+
+.main__brand{
+    display: flex;
+    align-items: center; /* Почему сбрасывается размер картинки если убрать это свойство? */
+    justify-content: space-around;
+    width: 240px;
+    height: 72px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+}
+.swiper{
+    display: inline-flex;
+    margin-left: 10px;
+    padding-top: 24px;
+    overflow:visible;
+    padding-right: 10px;
+}
+.swiper-wrapper{
+    padding-right: 40px;
+    width: 240px;
+    height: 72px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center; /* Почему сбрасывается размер картинки если убрать это свойство? */
+    justify-content: space-around;
+    width: 240px;
+    height: 72px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+
+}
+.btn__hidden{
+    padding-top: 24px;
+    padding-left: 24px;
+    width: 133px;
+    height: 24px;
+}
+.morebtn{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    border:none;
+    cursor: pointer;
+    font-family: ttmedium;
+    font-size: 16px;
+}
+
+.morebtn img{
+    padding-right: 10px;
+}
+
+.overmore{
+    display: none;
+}
+
+.swiper-pagination {
+    position: static;
+    padding-top: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 400px){
+    .btn__hidden{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+}
+
+@media screen and (min-width:401px){
+    .swiper-pagination,
+    .swiper{
+        display: none;
+    }
+    .main{
+        padding-top: 24px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 26px;
+        padding-left: 24px;
+    }
+}
