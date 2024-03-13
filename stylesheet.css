@@ -42,10 +42,21 @@ body{
     margin-left: 10px;
     padding-top: 24px;
     overflow:visible;
-    padding-right: 10px;
+}
+.swiper__1,
+.swiper__2,
+.swiper__3,
+.swiper__4,
+.swiper__5,
+.swiper__6,
+.swiper__7,
+.swiper__8,
+.swiper__9,
+.swiper__10,
+.swiper__11{
+    margin-right: 30px;
 }
 .swiper-wrapper{
-    margin-right: 30px;
     width: 240px;
     height: 72px;
 }
@@ -91,6 +102,10 @@ body{
     padding-top: 30px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
     .btn__hidden{
         display: none;
     }
